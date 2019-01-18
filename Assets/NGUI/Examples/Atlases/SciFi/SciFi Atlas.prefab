@@ -49,7 +49,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: d650d98b3c4028a4a8b7225c1a6482f8, type: 2}
   mSprites:
   - name: Book
-    x: 83
+    x: 125
     y: 2
     width: 42
     height: 41
@@ -75,8 +75,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_1
-    x: 1464
-    y: 89
+    x: 2477
+    y: 188
     width: 131
     height: 188
     borderLeft: 0
@@ -88,8 +88,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_2
-    x: 1845
-    y: 279
+    x: 2477
+    y: 377
     width: 149
     height: 178
     borderLeft: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_3
-    x: 1845
-    y: 458
+    x: 2477
+    y: 556
     width: 152
     height: 182
     borderLeft: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_4
-    x: 1596
-    y: 126
+    x: 1720
+    y: 20
     width: 127
     height: 151
     borderLeft: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_5
-    x: 1845
-    y: 641
+    x: 1185
+    y: 53
     width: 153
     height: 187
     borderLeft: 0
@@ -140,8 +140,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_6
-    x: 1252
-    y: 4
+    x: 1343
+    y: 569
     width: 118
     height: 145
     borderLeft: 0
@@ -153,8 +153,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_7
-    x: 1058
-    y: 1
+    x: 1343
+    y: 715
     width: 119
     height: 144
     borderLeft: 0
@@ -166,8 +166,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_8
-    x: 1252
-    y: 150
+    x: 995
+    y: 9
     width: 189
     height: 231
     borderLeft: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_9
-    x: 1058
-    y: 146
+    x: 801
+    y: 5
     width: 193
     height: 235
     borderLeft: 0
@@ -192,10 +192,75 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Card_Use
-    x: 1724
-    y: 88
+    x: 1343
+    y: 860
     width: 97
     height: 189
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Clan
+    x: 1464
+    y: 172
+    width: 494
+    height: 68
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Clan_Off
+    x: 2008
+    y: 94
+    width: 208
+    height: 66
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Clan_On
+    x: 2217
+    y: 29
+    width: 207
+    height: 65
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ClanTab
+    x: 801
+    y: 241
+    width: 541
+    height: 808
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ClanTab_Head
+    x: 1464
+    y: 241
+    width: 541
+    height: 249
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -218,8 +283,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Dack
-    x: 801
-    y: 382
+    x: 2008
+    y: 1381
     width: 641
     height: 667
     borderLeft: 0
@@ -244,8 +309,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EventGroup_00
-    x: 3376
-    y: 1906
+    x: 2917
+    y: 1355
     width: 701
     height: 142
     borderLeft: 0
@@ -270,8 +335,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EventItem_00
-    x: 2707
-    y: 1851
+    x: 3031
+    y: 1594
     width: 668
     height: 197
     borderLeft: 0
@@ -283,7 +348,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EventItem_01
-    x: 2015
+    x: 3031
     y: 1792
     width: 691
     height: 256
@@ -296,8 +361,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Font - Header
-    x: 2015
-    y: 1279
+    x: 3723
+    y: 1536
     width: 256
     height: 512
     borderLeft: 0
@@ -309,10 +374,49 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Font - Normal
-    x: 801
-    y: 125
+    x: 2650
+    y: 840
     width: 256
     height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Friend_Off
+    x: 2217
+    y: 95
+    width: 207
+    height: 65
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Friend_On
+    x: 1464
+    y: 23
+    width: 207
+    height: 71
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FriendTab
+    x: 1464
+    y: 491
+    width: 502
+    height: 753
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -335,8 +439,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Honeycomb
-    x: 1464
-    y: 0
+    x: 1343
+    y: 480
     width: 112
     height: 88
     borderLeft: 1
@@ -361,7 +465,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Money
-    x: 126
+    x: 83
     y: 1
     width: 41
     height: 42
@@ -374,8 +478,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Neco_1
-    x: 1464
-    y: 1407
+    x: 2008
+    y: 739
     width: 550
     height: 641
     borderLeft: 0
@@ -387,8 +491,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Neco_2
-    x: 1464
-    y: 278
+    x: 2650
+    y: 1498
     width: 380
     height: 550
     borderLeft: 0
@@ -400,8 +504,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Neco_3
-    x: 1464
-    y: 829
+    x: 2008
+    y: 161
     width: 468
     height: 577
     borderLeft: 0
@@ -426,8 +530,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Neco_Main
-    x: 2272
-    y: 1391
+    x: 2650
+    y: 1097
     width: 266
     height: 400
     borderLeft: 0
@@ -439,8 +543,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NGUI
-    x: 801
-    y: 48
+    x: 1464
+    y: 95
     width: 255
     height: 76
     borderLeft: 0
@@ -456,6 +560,45 @@ MonoBehaviour:
     y: 1050
     width: 1463
     height: 998
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Society_Off
+    x: 2008
+    y: 27
+    width: 207
+    height: 66
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Society_On
+    x: 3031
+    y: 1528
+    width: 206
+    height: 65
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SocietyTab
+    x: 1464
+    y: 1245
+    width: 543
+    height: 803
     borderLeft: 0
     borderRight: 0
     borderTop: 0

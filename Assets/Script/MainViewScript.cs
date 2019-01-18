@@ -11,7 +11,6 @@ public class MainViewScript : MonoBehaviour {
 
     // Use this for initialization
 
-
     public void SetTouch(bool bTouch)
     {
         GetComponent<UIScrollView>().enabled = bTouch;
@@ -43,7 +42,6 @@ public class MainViewScript : MonoBehaviour {
             SetTouch(true);
         }
     }
-
 
     private static MainViewScript _inst = null;
     public static MainViewScript Instance

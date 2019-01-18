@@ -58,7 +58,7 @@ public partial class CardScript : MonoBehaviour {
     private void cardMoveCenter()
     {
         Vector3 centerPos = DackMgr.Instance.CenterPos.position;
-        _trans.position = Vector3.Lerp(_trans.position, centerPos, Time.deltaTime * 3);
+        _trans.position = Vector3.Lerp(_trans.position, centerPos, Time.deltaTime * 6);
 
         Vector3 dist = _trans.position - centerPos;
         if(dist.magnitude < 0.01)

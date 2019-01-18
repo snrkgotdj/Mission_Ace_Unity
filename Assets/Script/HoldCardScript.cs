@@ -14,6 +14,23 @@ public class HoldCardScript : MonoBehaviour {
     List<CardScript> _listCard = new List<CardScript>();
     UISprite _sprCardPrefab = null;
 
+    public void OnButtonPlus1()
+    {
+        Vector3 buttonPos = UIButton.current.transform.localPosition;
+        createCard(buttonPos);
+        RenewPosition();
+    }
+
+    public void OnButtonPlus3()
+    {
+        Vector3 buttonPos = UIButton.current.transform.localPosition;
+        for (int i = 0; i < 3; ++i)
+        {
+            createCard(buttonPos);
+        }
+        RenewPosition();
+    }
+
     public bool ExchangeCard(CardScript fromCard, CardScript toCard)
     {
         if (null == fromCard)
@@ -91,19 +108,33 @@ public class HoldCardScript : MonoBehaviour {
             pos.x = DackStartX + (DackPadX + _sprCardPrefab.width) * idxX;
             pos.y = DackStartY - (DackPadY + _sprCardPrefab.height) * idxY;
 
-            _listCard[i].transform.localPosition = pos;
+            //_listCard[i].transform.localPosition = pos;
+            _listCard[i].MoveTo(pos);
             _listCard[i].Idx = i;
             _listCard[i].IsSelected = false;
             _listCard[i].IsDack = false;
         }
     }
 
+    private void createCard()
+    {
+        GameObject obj = gameObject.AddChild(_sprCardPrefab.gameObject);
+        _listCard.Add(obj.GetComponent<CardScript>());
+    }
+
+    private void createCard(Vector3 position)
+    {
+        GameObject obj = gameObject.AddChild(_sprCardPrefab.gameObject);
+        obj.transform.localPosition = position;
+
+        _listCard.Add(obj.GetComponent<CardScript>());
+    }
+
     private void initCard()
     {
         for (int i = 0; i < FirstCardCount; ++i)
         {
-            GameObject obj = gameObject.AddChild(_sprCardPrefab.gameObject);
-            _listCard.Add(obj.GetComponent<CardScript>());
+            createCard();
         }
 
         RenewPosition();

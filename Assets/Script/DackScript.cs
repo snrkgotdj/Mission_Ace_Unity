@@ -93,7 +93,8 @@ public class DackScript : MonoBehaviour {
             pos.x = DackStartX + (DackPadX + _sprCardPrefab.width) * idxX;
             pos.y = DackStartY - (DackPadY + _sprCardPrefab.height) * idxY;
 
-            _listDackCard[i].transform.localPosition = pos;
+            //_listDackCard[i].transform.localPosition = pos;
+            _listDackCard[i].MoveTo(pos);
             _listDackCard[i].Idx = i;
 
             _listDackCard[i].IsDack = true;

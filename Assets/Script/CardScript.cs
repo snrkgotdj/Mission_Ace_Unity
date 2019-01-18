@@ -17,15 +17,43 @@ public partial class CardScript : MonoBehaviour {
     UISprite        _sprCardUse = null;
     UIButtonScale   _btnScale = null;
     UICenterOnChild _centerOnChild = null;
-    ShakeObjectScript _shakeScript = null;
+    UIDragDropItem  _dragDrop = null;
+
+    ShakeObjectScript   _shakeScript = null;
+    MoveToScript        _moveTo = null;
 
 
     CARD_STATE _cardState = CARD_STATE.CARD_END;
+
+    public void SetDragDrop(bool bOn)
+    {
+        if(null == _dragDrop)
+        {
+            Debug.LogError("Card에 DragDrop이 없습니다.");
+            Debug.Assert(false);
+            return;
+        }
+
+        _dragDrop.enabled = bOn;
+    }
+
+    public void MoveTo(Vector3 position)
+    {
+        if(null == _moveTo)
+        {
+            Debug.LogError("Card에 MoveToScript가 없습니다. 셋팅후 사용해주세요");
+            Debug.Assert(false);
+            return;
+        }
+
+        _moveTo.SetMoveTo(position);
+    }
 
 
     public void ReturnNaturally()
     {
         _trans.eulerAngles = Vector3.zero;
+
 
         _btnScale.enabled = true;
         _centerOnChild.enabled = false;
@@ -87,7 +115,6 @@ public partial class CardScript : MonoBehaviour {
 
     void OnPress(bool isPress)
     {
-        // 클릭을 뗏을때만 체크하겟다.
         if (true == isPress)
             return;
 
@@ -143,12 +170,6 @@ public partial class CardScript : MonoBehaviour {
         //드래그하면 원래 상태로 돌린.
         _cardState = CARD_STATE.CARD_END;
 
-        // 드래그 한 만큼 이동시킨.
-        Vector3 pos = _trans.localPosition;
-        pos.x += delta.x;
-        pos.y += delta.y;
-        _trans.localPosition = pos;
-
         DackMgr.Instance.SetChangeCard_from(this);
 
     }
@@ -168,7 +189,10 @@ public partial class CardScript : MonoBehaviour {
         _btnScale = GetComponent<UIButtonScale>();
         _trans = GetComponent<Transform>();
         _centerOnChild = GetComponent<UICenterOnChild>();
+        _dragDrop = GetComponent<UIDragDropItem>();
+
         _shakeScript = GetComponent<ShakeObjectScript>();
+        _moveTo = GetComponent<MoveToScript>();
 
         Cost = Random.Range(1, 9);
         _sprCard.spriteName = "Card_" + Cost.ToString();

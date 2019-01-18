@@ -17,6 +17,7 @@ public class CardUseScript : MonoBehaviour {
         Card.IsSelected = true;
         Card.GetComponent<BoxCollider>().enabled = true;
 
+
         Destroy(gameObject);
     }
 

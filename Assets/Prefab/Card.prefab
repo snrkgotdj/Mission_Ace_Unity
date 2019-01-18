@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 114312318880042142}
   - component: {fileID: 114880126782129504}
   - component: {fileID: 114271797855757310}
+  - component: {fileID: 114706946676041340}
+  - component: {fileID: 114334153851291080}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -99,6 +101,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   springStrength: 8
   nextPageThreshold: 0
+--- !u!114 &114334153851291080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248230339132162}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9ee9adcf574fc42857acfaad9fb89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restriction: 0
+  cloneOnDrag: 0
+  pressAndHoldDelay: 1
+  interactable: 1
 --- !u!114 &114574132786609592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,6 +185,18 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
   mSpriteName: Card_1
   mFillCenter: 1
+--- !u!114 &114706946676041340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248230339132162}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6b81f1dcd634edfb05d5b22128beba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2000
 --- !u!114 &114880126782129504
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,6 +6,9 @@ using UnityEngine;
 public class MainViewScript : MonoBehaviour {
 
     public UICenterOnChild UiCenter { get; private set; }
+    public UIScrollView UIScroll { get; private set; }
+
+    Transform _trans = null;
 
     bool _isNextTouch = false;
 
@@ -13,7 +16,7 @@ public class MainViewScript : MonoBehaviour {
 
     public void SetTouch(bool bTouch)
     {
-        GetComponent<UIScrollView>().enabled = bTouch;
+        UIScroll.enabled = bTouch;
 
         //이벤트 매니저의 터치 종료
         EventGroupMgr.Instance.SetTouch(bTouch); // 이벤트들의 터치 종료
@@ -29,9 +32,12 @@ public class MainViewScript : MonoBehaviour {
         _isNextTouch = true;
     }
 
-    void Start()
+    private void Awake()
     {
         UiCenter = GetComponentInChildren<UICenterOnChild>();
+        UIScroll = GetComponent<UIScrollView>();
+
+        _trans = GetComponent<Transform>();
     }
 
     private void Update()

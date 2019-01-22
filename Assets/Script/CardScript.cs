@@ -155,7 +155,8 @@ public partial class CardScript : MonoBehaviour {
 
         else
         {
-            clickToSelect();
+            if (true == MainViewScript.Instance.UIScroll.enabled)
+                clickToSelect();
         }
     }
 

@@ -16,7 +16,7 @@ public class CardUseScript : MonoBehaviour {
         Card.SetState(CardScript.CARD_STATE.CARD_MOVECENTER);
         Card.IsSelected = true;
         Card.GetComponent<BoxCollider>().enabled = true;
-
+        Card.SetDragDrop(true);
 
         Destroy(gameObject);
     }

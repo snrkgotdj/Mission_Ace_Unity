@@ -49,7 +49,8 @@ public class VertHoriScrollScript : UIDragScrollView
         {
             scrollView = ScrollHorizontal;
         }
-        base.OnPress(true);// OnPress호출
+
+        base.OnPress(true);
         base.OnDrag(delta);
         _isMove = true;
     }

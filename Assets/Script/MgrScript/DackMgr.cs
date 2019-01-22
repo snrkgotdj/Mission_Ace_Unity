@@ -22,11 +22,17 @@ public class DackMgr : MonoBehaviour {
 
     public void CancleSelect()
     {
-        if(null != ChangeCard_from)
+        if (null != ChangeCard_from)
             ChangeCard_from.IsSelected = false;
 
-        if(null != ChangeCard_to)
+        if (null != ChangeCard_to)
             ChangeCard_to.IsSelected = false;
+
+        if (null != SelectedCard)
+            SelectedCard.SetDragDrop(false);
+
+        if (null != ChangeCard_from)
+            ChangeCard_from.SetDragDrop(false);
 
         SelectedCard = null;
         ChangeCard_from = null;
@@ -56,9 +62,9 @@ public class DackMgr : MonoBehaviour {
             return false;
 
         //둘다 덱에 있는 카드끼리 교환
-        if(true == ChangeCard_from.IsDack && true == ChangeCard_to.IsDack)
+        if (true == ChangeCard_from.IsDack && true == ChangeCard_to.IsDack)
         {
-            if(false == BattleDack.ChangeCardInDack(ChangeCard_from, ChangeCard_to))
+            if (false == BattleDack.ChangeCardInDack(ChangeCard_from, ChangeCard_to))
             {
                 Debug.LogError("덱 안의 카드끼리 교환 실패");
                 Debug.Assert(false);
@@ -96,7 +102,7 @@ public class DackMgr : MonoBehaviour {
     void Start () 
     {
         CardPrefab.GetComponent<VertHoriScrollScript>().ScrollVertical = GetComponent<UIScrollView>();
-        CardPrefab.GetComponent<VertHoriScrollScript>().ScrollHorizontal = MainViewScript.Instance.GetComponent<UIScrollView>();
+        CardPrefab.GetComponent<VertHoriScrollScript>().ScrollHorizontal = MainViewScript.Instance.UIScroll;
 
         BattleDack = GetComponentInChildren<DackScript>();
         HoldCard = GetComponentInChildren<HoldCardScript>();

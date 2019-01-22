@@ -58,7 +58,7 @@ public class EventGroup : MonoBehaviour
         _eventCount += 1;
 
         instance.GetComponent<VertHoriScrollScript>().ScrollVertical = EventGroupMgr.Instance.GetComponent<UIScrollView>();
-        instance.GetComponent<VertHoriScrollScript>().ScrollHorizontal = MainViewScript.Instance.GetComponent<UIScrollView>();
+        instance.GetComponent<VertHoriScrollScript>().ScrollHorizontal = MainViewScript.Instance.UIScroll;
 
         instance.transform.localPosition = new Vector3(transform.position.x, iPosY);
         instance.GetComponent<EventScript>().SetTitle("Event_" + _eventCount.ToString());

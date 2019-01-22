@@ -31,7 +31,6 @@ public partial class CardScript : MonoBehaviour {
             case CARD_STATE.CARD_APPEAR:        _sprCard.alpha = 0;     break;
             case CARD_STATE.CARD_DISAPPEAR:     _sprCard.alpha = 1;     break;
         }
-
     }
 
 

@@ -68,6 +68,7 @@ public class DackScript : MonoBehaviour {
         foreach (var card in _listDackCard)
         {
             card.ReturnNaturally();
+            card.SetDragDrop(false);
         }
 
         GetComponent<UICenterOnChild>().enabled = false;
@@ -78,6 +79,7 @@ public class DackScript : MonoBehaviour {
         foreach(var card in _listDackCard)
         {
             card.GetComponent<ShakeObjectScript>().enabled = true;
+            card.SetDragDrop(true);
         }
     }
 

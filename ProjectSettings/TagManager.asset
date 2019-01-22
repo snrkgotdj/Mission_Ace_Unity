@@ -10,6 +10,7 @@ TagManager:
   - Society
   - Event
   - Title
+  - Value
   layers:
   - Default
   - TransparentFX
